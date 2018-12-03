@@ -1,0 +1,20 @@
+def str_analysis():
+    max_num = 99
+    power = 2
+    while power>0:
+        book = input("Enter word or Integer:")
+        if book =="":
+            power = power-1
+            continue
+        elif int(book.isdigit()) and int(book)>=max_num:
+            print(book,"is greater than expected" )
+        elif int(book.isdigit()) and int(book)<=max_num:
+            print(book,"is smaller than expected")
+        elif book.isalpha():
+            print(book,"is all alphabetical character!")
+        else:
+            print(book, "what a surprise, it is not an alphabetical nor digit")
+            return
+        return
+    return
+str_analysis()
