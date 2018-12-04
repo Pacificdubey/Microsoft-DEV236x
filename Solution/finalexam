@@ -1,0 +1,39 @@
+def addinr_report():
+    book3 = "a,A,d,D"
+    total = 0
+    items = ""
+    i =0
+    selected = input('Choose report type "A" or "T":')
+    print('Report type include all Items ("A") or TotalQuality("T")')
+    print('Input an integer to add to the value or "Q" to quit')
+    while selected =='A' or 'a':
+        book1 = input('Enter an integer or "Q"')
+        if book1.isdigit():
+            items = items + book1 +'\n'
+            total = total + int(book1)
+        elif book1.startswith('Q') or book1.startswith('q'):
+                print("\nItems")
+                print(items)
+                print("Total")
+                print(total)
+                break
+                pass
+        else:
+                print(book1, "is not eligible word")
+                break
+                while selected =="T" or 't':
+                    book2 = input('Enter an integer or "Q"')
+                    if book2.isdigit():
+                        items = items + book2 +'\n'
+                        total = total + int(book2) 
+                    elif book2.startswith('Q') or book2.startswith('q'):
+                            print("\nTotal")
+                            print(total)
+                            break
+                            pass
+                    else:
+                            print(book2, "is not eligible word")
+                            break
+   
+            
+addinr_report() 
